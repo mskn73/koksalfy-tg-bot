@@ -11,8 +11,8 @@ import telebot
 
 
 # Check for environment variable
-if 'DOGEFY_TKN' not in os.environ:
-    print("Environment variable 'DOGEFY_TKN' not defined.", file=sys.stderr)
+if 'KOKSALFY_TKN' not in os.environ:
+    print("Environment variable 'KOKSALFY_TKN' not defined.", file=sys.stderr)
     exit(1)
 
 
@@ -21,12 +21,12 @@ logger = telebot.logger
 logger.setLevel(logging.INFO)
 
 # Initialize bot api with token from environment
-bot = telebot.TeleBot(os.environ['DOGEFY_TKN'], skip_pending=True)
+bot = telebot.TeleBot(os.environ['KOKSALFY_TKN'], skip_pending=True)
 
 botname = bot.get_me().username
 
 # Doge image and final image extension
-img_doge = cv2.imread('doge.png', -1)
+img_doge = cv2.imread('koksal0.png', -1)
 img_ext = '_dogefied.png'
 
 # Cascade classifier parameters, can be tricky to adjust...
