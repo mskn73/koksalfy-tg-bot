@@ -25,9 +25,9 @@ bot = telebot.TeleBot(os.environ['KOKSALFY_TKN'], skip_pending=True)
 
 botname = bot.get_me().username
 
-# Doge image and final image extension
+# Koksal image and final image extension
 img_doge = cv2.imread('koksal0.png', -1)
-img_ext = '_dogefied.png'
+img_ext = '_koksalfied.png'
 
 # Cascade classifier parameters, can be tricky to adjust...
 cc_scale_factor = 1.2
